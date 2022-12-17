@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Autocomplete</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(235, 226, 215);
+      }
+      #myMenu {
+        display: none;
+        list-style-type: none;
+      }
+      #myMenu li a {
+        padding: 12px;
+        text-decoration: none;
+        color: black;
+        display: block;
+      }
+
+      #myMenu li a:hover {
+        background-color: #eee;
+      }
+      #search {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <input
+        type="text"
+        id="search"
+        onkeyup="myFunction()"
+        placeholder="search"
+      />
+    </div>
+    <div>
+      <ul id="myMenu">
+        <li onclick="handleClick(this)"><a href="#">HTML</a></li>
+        <li onclick="handleClick(this)"><a href="#">CSS</a></li>
+        <li onclick="handleClick(this)"><a href="#">JavaScript</a></li>
+        <li onclick="handleClick(this)"><a href="#">PHP</a></li>
+        <li onclick="handleClick(this)"><a href="#">Python</a></li>
+        <li onclick="handleClick(this)"><a href="#">jQuery</a></li>
+        <li onclick="handleClick(this)"><a href="#">SQL</a></li>
+        <li onclick="handleClick(this)"><a href="#">Bootstrap</a></li>
+        <li onclick="handleClick(this)"><a href="#">Node.js</a></li>
+      </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
